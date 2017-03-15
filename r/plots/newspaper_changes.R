@@ -27,7 +27,7 @@ old_and_new_plotdata <- melt(old_and_new_plotdata, id = "year")
 # background_events <- data.frame(start = c(1861, 1899, 1908, 1917.5), end = c(1865, 1905, 1917, 1918.5),
 #                                 event = c("New publishing laws", "1st Russification period", "2nd Russification period", "Civil War"))
 
-background_events <- read.csv("../../data-public/data-refined/censorship_events.csv")
+background_events <- read.csv("data/censorship_events.csv")
 background_events$event <- factor(background_events$event,
                                   levels = as.character(background_events$event))
 

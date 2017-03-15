@@ -1,0 +1,154 @@
+"id,""title""";
+"fk10080,""Heinolan Sanomat""";ns
+"fk10123,""Itä-Karjala""";ns
+"fk10061,""Forssan Sanomat""";ns/t
+"fk10128,""Itä-Suomen Sanomat""";ns
+"fk10055,""Folket""";r
+"fk10121,""Itä-Hämeen Raivaaja""";t
+"fk10165,""Kansalainen""";ns
+"fk10225,""Kotkan Uutiset""";p
+"fk10108,""Hämetär""";ns
+"fk10091,""Helsingfors-Posten""";r
+"0359-0305,""Tyrvään Sanomat""";p
+"fk10197,""Kaskisten Lehti""";
+"fk10056,""Folket""";r
+"fk10257,""Lahti""";vs
+"fk10253,""Lahden Lehti""";ns
+"fk10149,""Kaikuja Kajaanista""";vs
+"fk10133,""Jaakkiman Sanomat""";p
+"0356-1135,""Kotimaa""";kr
+"fk10216,""Kokkola""";vs
+"fk10157,""Kajaanin Lehti""";ns
+"fk10120,""Itä-Häme""";
+"0356-1356,""Kaleva""";ns
+"0358-6294,""Borgåbladet""";r
+"fk10276,""Länsisuomen Työmies""";t
+"fk14784,""Tornion Lehti""";p/ns
+"fk14785,""Tornion Uutiset""";p/ns
+"fk14794,""Työ""";t
+"fk14802,""Työmies""";t
+"1458-6517,""Wiborgs Nyheter""";r
+"fk14938,""Pohjois-Savo""";ns
+"fk10340,""Perä-Pohjolainen""";ns
+"fk10362,""Pohjan Poika""";ns
+"fk10368,""Pohjois-Karjala""";ns/vs
+"fk10373,""Pohjois-Suomi""";vs
+"0355-6913,""Aamulehti""";ns/vs
+"0356-2301,""Salmetar""";p
+"0356-1860,""Uudenkaupungin Sanomat""";vs
+"0355-6085,""Suomen Urheilulehti""";
+"0355-2047,""Helsingin Sanomat""";ns
+"0356-2751,""Hämeen Sanomat""";vs
+"0782-6419,""Länsi-Suomi""";vs
+"0356-1844,""Vasabladet""";r
+"0451-5560,""Kauppalehti""";
+"fk14828,""Uusi Inkeri""";
+"fk14837,""Uusmaalainen""";ns
+"fk14864,""Wasa-Posten""";r
+"fk14868,""Veckobladet""";r
+"fk14883,""Wiipuri""";vs
+"fk10035,""Elämä""";t
+"fk10471,""Suomen Kansa""";
+"fk10495,""Suupohjan Kaiku""";ns
+"fk14759,""Säkkijärven Sanomat""";p
+"fk14770,""Tampereen Sanomat""";ns
+"fk14981,""Kotka Nyheter""";r
+"fk03376,""Kylväjä""";kr
+"fk19511,""Kansan Lehti""";t
+"fk10394,""Raahen Lehti""";
+"fk14940,""Eteenpäin""";t
+"0356-1690,""Etelä-Suomi""";vs
+"fk14964,""Tammerfors Nyheter""";r
+"0789-0745,""Vaasa""";vs
+"fk04106,""Tuulispää""";
+"fk02765,""Velikulta""";
+"fk01021,""Kurikka""";
+"fk01113,""Sosialistinen Aikakauslehti""";
+"fk09469,""Raataja""";
+"fk00458,""Helsingin Kaiku""";
+"fk32003,""Amerikan Kaiku""";as
+"fk32016,""Amerikan Uutiset""";as
+"fk32042,""Uusi Kotimaa""";as
+"fk16566,""Amerikan Suometar""";as
+"fk11101,""Haparandabladet""";
+"fk34300,""Turisti""";
+"0018-2362,""Historiallinen Aikakauskirja""";
+"0355-0257,""Suomi""";
+"fk01318,""Lukutupa""";
+"0356-133X,""Turun Sanomat""";ns
+"fk32030,""Pohjan Tähti""";
+"fk27509,""Päivälehti""";ns
+"1458-2546,""Oulun Ilmoituslehti""";
+"1458-8633,""Turun Lehti""";
+"1457-4632,""Suomalainen""";vs
+"1457-4675,""Suomalainen Wirallinen Lehti""";
+"1458-0543,""Uusi Aura""";vs
+"1458-8811,""Koti ja yhteiskunta""";
+"1458-8862,""Kyläkirjaston Kuvalehti""";
+"1458-2643,""Rauman Lehti""";ns
+"1458-8595,""Tampereen Uutiset""";ns
+"1457-4314,""Finlands Allmänna Tidning""";r
+"1458-0721,""Fredrikshamns Tidning""";r
+"0356-0724,""Hufvudstadsbladet""";r
+"0782-7024,""Karjala""";ns
+"0357-1858,""Uusimaa""";vs
+"1457-4721,""Uusi Suometar""";vs
+"1458-0527,""Arbetaren""";t
+"1458-2279,""Laatokka""";ns
+"1458-2333,""Louhi""";ns
+"1457-4292,""Björneborgs Tidning""";r
+"1458-0950,""Karjalatar""";vs/ns
+"k27,""Deenas Lapa""";
+"1458-2724,""Wiipurin Sanomat. Supistus""";ns
+"k95,""Libausche Zeitung""";
+"k226,""Postimees""";
+"k239,""Revalsche Zeitung""";
+"fk32652,""Suomen matkailijayhdistyksen vuosikirja""";
+"1458-8803,""Österbottniska Posten""";r
+"1458-6630,""Keski-Savo""";ns
+"1458-6584,""Otava""";ns
+"1458-0748,""Koitar""";ns
+"1458-2481,""Mikkelin Sanomat""";vs
+"1458-851X,""Mikkeli""";ns
+"fk36614,""Väinämöinen""";
+"fk03927,""Valvoja""";
+"1458-8560,""Tammerfors Nyheter""";r
+"fk09147,""Nuori Suomi""";
+"fk00690,""Kanerva""";
+"0022-9415,""Kätilölehti""";
+"0782-033X,""Vartija""";
+"fk09229,""Omatunto""";
+"fk35655,""Pyhä muisto""";
+"0040-3555,""Teologinen aikakauskirja""";
+"0546-966X,""Pelastusarmeijan nuori sotilas""";
+"0787-8842,""Rauhan sanoma""";
+"fk02644,""Rautatie""";
+"fk00133,""Auta itseäsi : lehti osuuskauppoja varten""";
+"fk00417,""Gutenberg : aikakauslehti""";
+"fk01895,""Työmiehen illanvietto : Suomen työväen viikkolehti""";
+"fk36657,""Vapaita lehtisiä""";
+"fk01867,""Turun sanomain nuorten lehti""";
+"fk09284,""Palvelijatarlehti""";
+"fk03743,""Pyrkijä : nuorison rientojen kannattaja""";
+"fk36567,""Ratas : Etelä-Suomen kansantalousliite""";
+"fk02675,""Wakuuttaja""";
+"fk00766,""Kaswatusopillisia sanomia kristillisille opettajille ja wanhemmille""";
+"fk00705,""Kansakoulun lehti : kasvatusopillinen aikakauskirja kodille ja koululle""";
+"fk00153,""Betania : aikakauskirja uskonelämän ja -toiminnan edistämiseksi""";
+"fk00220,""Eläinsuojelus : Suomen eläinsuojelusyhdistysten aikakauskirja""";
+"fk00078,""Alempi kansanopetus""";
+"fk01992,""Naisten ääni""";
+"fk01366,""Maamies""";
+"fk20090216,""Markkina-Matti : puolivirallinen eli -pilallinen aikakauslehti""";
+"0013-6522,""Emäntälehti : Martta-yhdistyksen äänenkannattaja""";
+"0355-7146,""Pyhäkoululehti""";
+"0024-0699,""Leipuri : leipurien ja kondiittorien ammattilehti = yrkestidning för bagare och konditorer""";
+"0788-6926,""Luonnon ystävä : yleistajuinen luonnontieteellinen aikakauslehti""";
+"0356-4487,""Merimiehen ystäwä : Suomen merimieslähetystoimen lehti""";
+"0355-7294,""Vakuutussanomia""";
+"0039-5528,""Suomen kalastuslehti""";
+"0042-6806,""Virittäjä : Kotikielen seuran aikakauslehti""";
+"fk35612,""Eteenpäin : kalenteri kansalle""";
+"fk20090708,""Annonstaxa för Finland""";
+"fk34379,""Registeringstidning för varumärken""";
+"fk36247,""Suomalainen sanomalehtiluettelo""";
