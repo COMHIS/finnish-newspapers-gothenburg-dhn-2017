@@ -1,0 +1,5 @@
+r/input-data
+r/*.Rproj
+*.Rproj
+.Rproj.user
+.Rhistory
