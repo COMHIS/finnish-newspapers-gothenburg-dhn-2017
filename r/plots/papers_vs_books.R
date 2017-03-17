@@ -180,10 +180,6 @@ books_per_paper_decade_plotdata_top5 <- rbind(books_per_paper_decade_plotdata_vi
                                              books_per_paper_decade_plotdata_vaasa)
 
 
-# papers_issuedata <- read.csv("../data/finnish-newspapers/misc/circulation_plot_data_top5_papercon.csv")
-# papers_issuedata_fin <- subset(papers_issuedata, lang == "fin")
-# papers_issuedata_fin <- papers_issuedata_fin[, c("year", "issues", "location", "title")]
-
 issue_basedata <- read.csv("../data/finnish-newspapers/misc/issues_by_papers_by_years.csv")
 names(issue_basedata) <- c("title", "year", "issues")
 
