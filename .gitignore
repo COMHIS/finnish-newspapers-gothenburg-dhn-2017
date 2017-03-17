@@ -1,5 +1,6 @@
-r/input-data
+r/data/final_fennica_data.Rds
 r/*.Rproj
 *.Rproj
 .Rproj.user
 .Rhistory
+data/*

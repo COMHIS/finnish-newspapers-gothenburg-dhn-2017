@@ -2,6 +2,7 @@ source("./load_basedata.R")
 source("./functions-data/newspaper_metadata_functions.R")
 source("./functions-data/locations_functions.R")
 source("./functions-data/provinciality_functions.R")
+source("./functions-data/functions-common.R")
 
 library(reshape2)
 library(ggplot2)
@@ -108,7 +109,7 @@ get_books_per_paper_decade_plotdata <- function(newspapers_provinciality_plot_da
 enriched_newspaper_metadata <- enrich_newspaper_metadata(newspaper_base_data)
 newspapers_subset <- subset(enriched_newspaper_metadata, AINYLEISMAARE == "SAN" & JULKAISUMAA == "FI" & KIELI == "fin")
 enriched_newspapers_locations_data <- enrich_locations_data(locations_data, newspapers_subset)
-fennicadata <- readRDS("./input-data/final_fennica_data.Rds")
+fennicadata <- readRDS("./data/final_fennica_data.Rds") # this data is not public
 
 start_year <- 1820
 end_year <- 1910
@@ -179,11 +180,11 @@ books_per_paper_decade_plotdata_top5 <- rbind(books_per_paper_decade_plotdata_vi
                                              books_per_paper_decade_plotdata_vaasa)
 
 
-# papers_issuedata <- read.csv("data/data-refined/circulation_plot_data_top5_papercon.csv")
+# papers_issuedata <- read.csv("../data/finnish-newspapers/misc/circulation_plot_data_top5_papercon.csv")
 # papers_issuedata_fin <- subset(papers_issuedata, lang == "fin")
 # papers_issuedata_fin <- papers_issuedata_fin[, c("year", "issues", "location", "title")]
 
-issue_basedata <- read.csv("../../data-public/data-refined/issues_by_papers_by_years.csv")
+issue_basedata <- read.csv("../data/finnish-newspapers/misc/issues_by_papers_by_years.csv")
 names(issue_basedata) <- c("title", "year", "issues")
 
 
@@ -333,12 +334,6 @@ books_per_papers_locations_top5_combined_plot <- ggplot() +
   theme(axis.title.x = element_blank(),
         axis.title.y = element_blank())
 
-# books_per_papers_locations_top5_combined_plot 
-# books_per_papers_locations_top5_plot
-
-# TODO:
-# Books per paper ISSUES in top 5 cities, eli sama jonka Ville jo teki, mutta nytten numeroittain. VILLE
-
 
 plots <- list(books_per_papers_decade_fin = books_per_paper_decade_fin_plot,
               books_per_papers_locations_top5_fin = books_per_papers_locations_top5_plot,
@@ -346,12 +341,4 @@ plots <- list(books_per_papers_decade_fin = books_per_paper_decade_fin_plot,
               issues_per_book = issues_per_book_plot_top5
               )
 
-plot_filename_prefix <- paste0("books_vs_papers_", Sys.Date(), "_")
-
-for (item in 1:length(plots)) {
-  filename <- paste0("./output/plots/",
-                     plot_filename_prefix,
-                     names(plots)[item],
-                     ".png")
-  ggsave(filename, plots[[item]], width = 6, height = 4, dpi = 300)  
-}
+save_plots_png(plots, prefix = "books_vs_papers")

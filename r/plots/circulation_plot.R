@@ -1,6 +1,8 @@
 
 library(ggplot2)
 library(scales)
+source("functions-data/functions-common.R")
+
 options(scipen = 1000000)
 
 get_circulation_plotdata <- function(circulation_data) {
@@ -98,7 +100,7 @@ get_paper_consumption <- function(circulation, page_area, page_size, issues) {
 }
 
 
-circulation_data <- read.csv("../../data-public/data-refined/circulation_1800-1860.csv")
+circulation_data <- read.csv("../data/finnish-newspapers/unified/circulation_1800-1860.csv")
 circulation_plot_data <- get_circulation_plotdata(circulation_data)
 circulation_plot_data$location <- as.character(circulation_plot_data$location)
 circulation_plot_data[circulation_plot_data$location == "Viipuri", ]$location <- "Vyborg"
@@ -111,8 +113,8 @@ circulation_plot_data$page_size <- NA
 circulation_plot_data$page_area <- NA
 circulation_plot_data$pages <- NA
 circulation_plot_data$issues <- NA
-issues_data <- read.csv("../../data-public/data-refined/issues_by_papers_by_years.csv")
-pages_data <- read.csv("../../data-public/data-refined/pages_by_papers_by_years.csv")
+issues_data <- read.csv("../data/finnish-newspapers/misc/issues_by_papers_by_years.csv")
+pages_data <- read.csv("../data/finnish-newspapers/misc/pages_by_papers_by_years.csv")
 names(issues_data) <- c("title", "year", "issues")
 names(pages_data) <- c("issn", "year", "pages")
 
@@ -234,13 +236,4 @@ plots <- list(paper_consumption = plot_cities_paper_con,
               estimates = plot_estimates,
               estimates_proportinal = plot_estimates_proportinal)
 
-plot_filename_prefix <- paste0("circulation_", Sys.Date(), "_")
-
-for (item in 1:length(plots)) {
-  filename <- paste0("./output/plots/",
-                     plot_filename_prefix,
-                     names(plots)[item],
-                     ".png")
-  ggsave(filename, plots[[item]], width = 6, height = 4, dpi = 300)  
-}
-
+save_plots_png(plots, prefix = "circulation")

@@ -3,6 +3,7 @@ source("./load_basedata.R")
 source("./functions-data/newspaper_metadata_functions.R")
 source("./functions-data/locations_functions.R")
 source("./functions-data/provinciality_functions.R")
+source("./functions-data/functions-common.R")
 
 library(reshape2)
 library(ggplot2)
@@ -114,7 +115,6 @@ get_newspaper_finswe_plot_proportional <- function(newspapers_language_share_sum
 enriched_newspaper_metadata <- enrich_newspaper_metadata(newspaper_base_data)
 finnish_newspapers_only_subset <- subset(enriched_newspaper_metadata, AINYLEISMAARE == "SAN" & JULKAISUMAA == "FI")
 enriched_newspapers_locations_data <- enrich_locations_data(locations_data, finnish_newspapers_only_subset)
-# fennicadata <- readRDS("./input-data/final_fennica_data.Rds")
 
 year_range <- 1800:1920
 
@@ -199,12 +199,4 @@ plots <- list(locations_with_min_2_papers = number_of_locations_with_min_2_paper
               newspapers_language_share = newspapers_language_share_plot,
               newspapers_language_share_proportional = newspapers_language_share_plot_proportional)
 
-plot_filename_prefix <- paste0("public_discourse_", Sys.Date(), "_")
-
-for (item in 1:length(plots)) {
-  filename <- paste0("./output/plots/",
-                     plot_filename_prefix,
-                     names(plots)[item],
-                     ".png")
-  ggsave(filename, plots[[item]], width = 6, height = 4, dpi = 300)  
-}
+save_plots_png(plots, prefix = "public_discourse")
